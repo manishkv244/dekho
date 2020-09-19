@@ -1,0 +1,35 @@
+<div>
+    <div class="example-container" >
+        <mat-toolbar color="primary" class="example-toolbar">
+            <button mat-icon-button class="example-icon" (click)="snav.toggle()" aria-label="Example icon-button with menu icon">
+              <mat-icon>menu</mat-icon>
+            </button>
+            <span>My App</span>
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+              <mat-icon>favorite</mat-icon>
+            </button>
+            <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+              <mat-icon>share</mat-icon>
+            </button>
+          </mat-toolbar>
+      
+        <mat-sidenav-container class="example-sidenav-container" >
+          <mat-sidenav #snav>
+            <mat-nav-list>
+                <mat-list>
+                    <!-- <mat-list-item><span> <mat-icon mat-list-icon>home</mat-icon>Home Menu</span> </mat-list-item>
+                    <mat-list-item><span> <mat-icon mat-list-icon>cake</mat-icon>Wish</span> </mat-list-item>
+                    <mat-list-item><span> <mat-icon mat-list-icon>notifications_active</mat-icon>Send Message</span> </mat-list-item>
+                    <mat-list-item><span> <mat-icon mat-list-icon>pages</mat-icon>Gift</span></mat-list-item> -->
+                </mat-list>
+            </mat-nav-list>
+          </mat-sidenav>
+      
+          <mat-sidenav-content>
+            <p > Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum  Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+        <!-- ,m, -->
+      </div>
+</div>
