@@ -30,7 +30,11 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+                  {
+              "deploy": "ng build --prod --base-href https://manishkv244.github.io/dekho/ && angular-cli-ghpages --branch gh-pages"
+}
+            ]
           },
           "configurations": {
             "production": {
