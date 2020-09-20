@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { LandingComponent } from './landing.component';
 import { RouterModule, Routes } from '@angular/router';
 import { DemoMaterialModule } from '../material.module';
+import { NgxUsefulSwiperModule } from 'ngx-useful-swiper';
 
 const routes: Routes = [{ path: '', component: LandingComponent }];
 
@@ -11,7 +12,8 @@ const routes: Routes = [{ path: '', component: LandingComponent }];
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    DemoMaterialModule
+    DemoMaterialModule,
+    NgxUsefulSwiperModule
   ]
 })
 export class LandingModule { }
