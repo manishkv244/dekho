@@ -1,15 +1,54 @@
-<swiper [config]="config" style="height: 400px; width: 400px;">
+<div class="top-int">
+  <span>12:38 AM</span>
+  <span class="float-right">
+    <mat-icon>signal_cellular_alt</mat-icon>
+    <mat-icon>signal_wifi_4_bar</mat-icon>
+    <mat-icon>battery_charging_full</mat-icon>
+  </span>
+</div>
+<!-- section one -->
+<div>
+  <div class="top">
+    <span class="head">Digital Store</span>
+    <span class="float-right user">
+      <button
+        mat-icon-button
+        [matMenuTriggerFor]="menu"
+        aria-label="Example icon-button with a menu"
+      >
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>power_settings_new</mat-icon>
+          <span>Logout</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>question_answer</mat-icon>
+          <span>Chat</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>settings</mat-icon>
+          <span>Settings</span>
+        </button>
+      </mat-menu>
+    </span>
+    <mat-divider></mat-divider>
+  </div>
+  <swiper [config]="config" style="height: 200px; width: 345px">
     <div class="swiper-wrapper">
-      <div class="swiper-slide">Slide 1</div>
-      <div class="swiper-slide">Slide 2</div>
-      <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
-      <div class="swiper-slide">Slide 10</div>
+      <div class="swiper-slide">
+        <span class="new">New</span><img src="../../assets/images/digi4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi2.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi1.jpg" />
+      </div>
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -17,4 +56,71 @@
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </swiper>
-  
+</div>
+<!-- section one end -->
+<mat-divider></mat-divider>
+<!-- section two -->
+<div>
+  <div class="top">
+    <span class="sub-head">Leadership Speak</span>
+  </div>
+  <swiper [config]="config3" style="height: 120px; width: 345px">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <span class="new">New</span><img src="../../assets/images/digi5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi1.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="../../assets/images/digi2.jpg" />
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </swiper>
+</div>
+<!-- section two end -->
+<mat-divider></mat-divider>
+<!-- section three -->
+<div>
+    <div class="top">
+      <span class="head">What's New ?</span>
+      <mat-divider></mat-divider>
+    </div>
+    <swiper [config]="config" style="height: 200px; width: 345px">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <span class="new">New</span><img src="../../assets/images/digi2.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/digi5.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/digi4.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="../../assets/images/digi1.jpg" />
+        </div>
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </swiper>
+  </div>
+  <!-- section three end -->
+  <mat-divider></mat-divider>
+<div class="bottom-menu">
+    <div class="p-25-p"><mat-icon>home</mat-icon></div>
+    <div class="p-25-p"><mat-icon>account_balance_wallet</mat-icon></div>
+    <div class="p-25-p"><mat-icon>search</mat-icon></div>
+    <div class="p-25-p mr"><mat-icon>account_box</mat-icon></div>
+</div>
