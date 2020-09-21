@@ -1,15 +1,16 @@
-<div class="top-int">
+<div [hidden]="!screenOrientation">
+<!-- <div class="top-int">
   <span>12:38 AM</span>
   <span class="float-right">
     <mat-icon>signal_cellular_alt</mat-icon>
     <mat-icon>signal_wifi_4_bar</mat-icon>
     <mat-icon>battery_charging_full</mat-icon>
   </span>
-</div>
+</div> -->
 <!-- section one -->
 <div>
   <div class="top">
-    <span class="head">Digital Store</span>
+    <span class="head">Motivation</span>
     <span class="float-right user">
       <button
         mat-icon-button
@@ -35,16 +36,25 @@
     </span>
     <mat-divider></mat-divider>
   </div>
-  <swiper [config]="config" style="height: 200px; width: 345px">
+  <swiper [config]="config" style="height: 200px; width: 100%">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <span class="new">New</span><img src="assets/images/digi4.jpg" />
+        <span class="new">New</span><img src="assets/images/moti1.jpg" />
       </div>
       <div class="swiper-slide">
-        <img src="assets/images/digi2.jpg" />
+        <img src="assets/images/moti2.jpg" />
       </div>
       <div class="swiper-slide">
-        <img src="assets/images/digi5.jpg" />
+        <img src="assets/images/moti3.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/moti4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/moti5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/moti6.jpg" />
       </div>
     </div>
     <!-- Add Pagination -->
@@ -59,19 +69,29 @@
 <!-- section two -->
 <div>
   <div class="top">
-    <span class="sub-head">Leadership Speak</span>
+    <span class="sub-head">Cute Animals</span>
   </div>
-  <swiper [config]="config3" style="height: 120px; width: 345px">
+  <swiper [config]="config3" style="height: 120px; width: 100%">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <span class="new">New</span><img src="assets/images/digi5.jpg" />
+        <span class="new">New</span><img src="assets/images/cute1.jpg" />
       </div>
       <div class="swiper-slide">
-        <img src="assets/images/digi1.jpg" />
+        <img src="assets/images/cute2.jpg" />
       </div>
       <div class="swiper-slide">
-        <img src="assets/images/digi4.jpg" />
+        <img src="assets/images/cute3.jpg" />
       </div>
+      <div class="swiper-slide">
+        <img src="assets/images/cute4.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/cute5.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="assets/images/cute6.jpg" />
+      </div>
+
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
@@ -88,7 +108,7 @@
       <span class="head">What's New ?</span>
       <mat-divider></mat-divider>
     </div>
-    <swiper [config]="config" style="height: 200px; width: 345px">
+    <swiper [config]="config" style="height: 200px; width: 100%">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <span class="new">New</span><img src="assets/images/digi2.jpg" />
@@ -114,4 +134,9 @@
     <div class="p-25-p"><mat-icon>account_balance_wallet</mat-icon></div>
     <div class="p-25-p"><mat-icon>search</mat-icon></div>
     <div class="p-25-p mr"><mat-icon>account_box</mat-icon></div>
+</div>
+</div>
+<div class="rotate" [hidden]="screenOrientation">
+  <img class="img" src="assets/images/turn.png">
+  <p>Please Rotate Your Screen</p>
 </div>
